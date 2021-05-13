@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 
-namespace Zza.Entities
+namespace PizzaHut.Entities
 {
     [DataContract]
     public partial class OrderItem

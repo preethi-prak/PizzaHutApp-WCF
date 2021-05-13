@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Zza.Entities
+namespace PizzaHut.Entities
 {
     public class OrderStatus
     {

@@ -4,11 +4,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
-using Zza.Entities;
+using PizzaHut.Entities;
 
-namespace Zza.Data
+namespace PizzaHut.Data
 {
-    public class ZzaDbContext : DbContext
+    public class PizzaHutDbContext : DbContext
     {
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Order> Orders { get; set; }

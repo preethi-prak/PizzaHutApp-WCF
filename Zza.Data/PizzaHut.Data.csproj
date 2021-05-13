@@ -48,7 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ZzaDbContext.cs" />
+    <Compile Include="PizzaHutDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -56,9 +56,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Zza.Entities\Zza.Entities.csproj">
+    <ProjectReference Include="..\Zza.Entities\PizzaHut.Entities.csproj">
       <Project>{7ec71c6e-e769-4c9e-8327-c72b0724b1b7}</Project>
-      <Name>Zza.Entities</Name>
+      <Name>PizzaHut.Entities</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
