@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaHut.SelfHost", "PizzaH
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaHutIISHost", "PizzaHutIISHost\PizzaHutIISHost.csproj", "{A2759EB2-FAE2-4BE9-96BD-8A0D71289C27}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaHutClient", "PizzaHutClient\PizzaHutClient.csproj", "{6CD5C776-AA1B-470B-BE2F-103AA468DFDA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{A2759EB2-FAE2-4BE9-96BD-8A0D71289C27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2759EB2-FAE2-4BE9-96BD-8A0D71289C27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2759EB2-FAE2-4BE9-96BD-8A0D71289C27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CD5C776-AA1B-470B-BE2F-103AA468DFDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CD5C776-AA1B-470B-BE2F-103AA468DFDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CD5C776-AA1B-470B-BE2F-103AA468DFDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CD5C776-AA1B-470B-BE2F-103AA468DFDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
