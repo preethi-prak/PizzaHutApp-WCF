@@ -3,8 +3,11 @@ using PizzaHut.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security;
+using System.Security.Permissions;
 using System.ServiceModel;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace PizzaHut.Services
@@ -15,8 +18,13 @@ namespace PizzaHut.Services
     {
         readonly PizzaHutDbContext _context = new PizzaHutDbContext();       
 
+        [PrincipalPermission(SecurityAction.Demand,Role = "BUILTIN\\Administrators")]
         public List<Customer> GetCustomers()
         {
+            var pricipal = Thread.CurrentPrincipal;
+            if (!pricipal.IsInRole("BUILTIN\\Administrators"))
+                throw new SecurityException("Access Denied");
+            //ClaimPrincipal.Current.HasClaim()
             return _context.Customers.ToList();
         }
 
